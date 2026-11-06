@@ -79,7 +79,7 @@ jobs:
       # --- 3. CLOUDFLARE'E DEPLOY ET (Canlıya doğru ve güncel versiyon gider) ---
       - run:
           name: Deploy to Cloudflare Pages
-          command: npx wrangler@3 pages deploy build --project-name="maku-yl"
+          command: npx wrangler@3 pages deploy build --project-name="cicd"
           environment:
             CLOUDFLARE_API_TOKEN: ${CLOUDFLARE_API_TOKEN}
             CLOUDFLARE_ACCOUNT_ID: "0fc89caf2d508bfbdefff4a3496b0254"
